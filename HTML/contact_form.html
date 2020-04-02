@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact Me</title>
+</head>
+<body>
+<!-- https://www.google.com/
+        ?your_name=Jake&
+        your_mobile=1234&
+        your_address=Foo+Bar+Street&
+        food_supplies=on&meds=on&phone_call=on
+-->
+<form action="http://google.com" method="get">
+    <fieldset>
+        <legend>My Details</legend>
+        <div>
+            <label for="my_name">My Name</label>
+            <input disabled id="my_name" name="my_name" type="text" value="Peter Fisher"/>
+        </div>
+        <div>
+            <label for="my_mobile">My Mobile</label>
+            <input disabled id="my_mobile" name="my_mobile" type="number" value="08001234"/>
+        </div>
+        <div>
+            <label for="my_address">My Address</label>
+            <textarea disabled id="my_address" name="my_address" rows="4">1 How To Code Well Street,
+London,
+UK
+            </textarea>
+        </div>
+    </fieldset>
+    <fieldset>
+        <legend>Your Details</legend>
+        <div>
+            <label for="your_name">Your Name</label>
+            <input id="your_name" name="your_name" type="text" value=""/>
+        </div>
+
+        <div>
+            <label for="your_mobile">Your Mobile</label>
+            <input id="your_mobile" name="your_mobile" type="number" value=""/>
+        </div>
+        <div>
+            <label for="your_address">Your Address</label>
+            <textarea id="your_address" name="your_address" rows="4"></textarea>
+        </div>
+
+            <fieldset>
+                <legend>What services do you require</legend>
+                <input id="food_supplies" name="food_supplies" type="checkbox"/>
+                <label for="food_supplies">Food Supplies</label>
+                <input id="meds" name="meds" type="checkbox"/>
+                <label for="meds">Meds</label>
+                <input id="phone_call" name="phone_call" type="checkbox"/>
+                <label for="phone_call">A phone call</label>
+            </fieldset>
+    </fieldset>
+
+    <input type="submit" value="Submit" />
+</form>
+</body>
+</html>
